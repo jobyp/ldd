@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+module="hw"
+device="scull"
+mode="644"
+
+
+rm -vf /dev/${device}[0-3]
+
+/sbin/rmmod ${module} || exit 1
+
+
+

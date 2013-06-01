@@ -1,5 +1,5 @@
 ifneq ($(KERNELRELEASE),)
-	obj-m:=hw.o
+	obj-m:=scull.o
 else
 	KDIR:=/lib/modules/$(shell uname -r)/build
 	PWD:=$(shell pwd)
@@ -7,7 +7,6 @@ else
 .PHONY: all
 all:
 	$(MAKE) -C $(KDIR) M=$(PWD) modules
-
 .PHONY: clean
 clean:
 	$(MAKE) -C $(KDIR) M=$(PWD) clean
