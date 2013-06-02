@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-module="hw"
+module="scull"
 device="scull"
 mode="644"
 
